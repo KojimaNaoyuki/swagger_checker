@@ -1,5 +1,6 @@
 require 'yaml'
 require_relative 'check_case/check_existence'
+require_relative 'check_case/check_value'
 
 SWAGGER_FILE_PATH = './test/swagger.yml'
 
@@ -9,7 +10,8 @@ target_api_method = ARGV[1]
 swagger = YAML.load_file(SWAGGER_FILE_PATH)
 
 check_cases = [
-  CheckCase::CheckExistence.new(swagger: swagger, target_api_path: target_api_path, target_api_method: target_api_method)
+  CheckCase::CheckExistence.new(swagger: swagger, target_api_path: target_api_path, target_api_method: target_api_method),
+  CheckCase::CheckValue.new(swagger: swagger, target_api_path: target_api_path, target_api_method: target_api_method)
 ]
 
 warning_counts = check_cases.map do |check_case|
