@@ -1,0 +1,49 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.0.7)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    addressable (2.8.5)
+      public_suffix (>= 2.0.2, < 6.0)
+    builder (3.2.4)
+    concurrent-ruby (1.2.2)
+    deep_merge (1.2.2)
+    hansi (0.2.1)
+    hash-deep-merge (0.1.1)
+    i18n (1.14.1)
+      concurrent-ruby (~> 1.0)
+    minitest (5.19.0)
+    mustermann (1.1.2)
+      ruby2_keywords (~> 0.0.1)
+    mustermann-contrib (1.1.2)
+      hansi (~> 0.2.0)
+      mustermann (= 1.1.2)
+    nokogiri (1.15.3-x64-mingw-ucrt)
+      racc (~> 1.4)
+    oas_parser (0.25.4)
+      activesupport (>= 4.0.0)
+      addressable (~> 2.3)
+      builder (~> 3.2.3)
+      deep_merge (~> 1.2.1)
+      hash-deep-merge
+      mustermann-contrib (~> 1.1.1)
+      nokogiri
+    public_suffix (5.0.3)
+    racc (1.7.1)
+    ruby2_keywords (0.0.5)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    yaml (0.2.1)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  oas_parser
+  yaml
+
+BUNDLED WITH
+   2.4.10
